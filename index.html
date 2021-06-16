@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Online</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="convert">
+        <div class="content">
+            <header>
+                <h1>Conversor Online</h1>
+            </header>
+            <form>
+                <fieldset>
+                    <select name="Roleta0" id="Roleta0" onchange="Lista()">
+                        <option value="">Selecione a conversão</option>
+                        <option value="Area">Distância</option>
+                        <option value="Vol">Volume</option>
+                        <option value="Peso">Peso</option>
+                        <option value="Temp">Temperatura</option>
+                        <option value="Vel">Velocidade</option>
+                    </select>
+                    <label for="Conversao">Valor para Conversão</label>
+                    <input type="number" id="Conversao" name="Conversao">
+                    <select name="Roleta1" id="Roleta1"></select>
+                    <label for="Convertido">Valor Convertido</label>
+                    <input type="number" id="Convertido" name="Convertido" readonly>
+                    <select name="Roleta2" id="Roleta2"></select>
+                    <button type="button" onclick="Convert()">Converter</button>
+                </fieldset>
+            </form>  
+        </div>
+    </div>
+    <script src="options.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
